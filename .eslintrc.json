@@ -10,10 +10,20 @@
     "rules": {
         "find-payments" : "error",
         "VariableNamingConvention" : "error",
+       "SingleCharacterVariableDeclaration" : "error",
         "indent": [
             "error",
             4
         ],
+        
+        "no-use-before-define": ["error",
+             { "functions": true,
+                 "classes": true,
+                  "variables": true }],
+                
+        "camelcase" : ["error",{ "properties":"always",
+            "ignoreDestructuring": false,
+            "ignoreGlobals": false }],
         "consistent-return":[
             "error"
 
