@@ -8,9 +8,12 @@
         "ecmaVersion": "latest"
     },
     "rules": {
+        "complexity": ["error", 10],
+
+        "block-scoped-var" : "error",
         "find-payments" : "error",
         "VariableNamingConvention" : "error",
-       "SingleCharacterVariableDeclaration" : "error",
+       
         "indent": [
             "error",
             4

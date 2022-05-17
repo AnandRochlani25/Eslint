@@ -37,7 +37,12 @@ module.exports = {
                     
 
                   //  if(0!==(y.type).localeCompare('ForStatement'))
-                 if((isLoop && isBlockStatement)){
+                 if((isLoop || isBlockStatement)){
+
+                    if(isLoop==true && isBlockStatement==false){
+
+                    }
+                    else{
                     context.report({
                         node,
                         messageId: "avoidName",
@@ -46,6 +51,7 @@ module.exports = {
                             name: r+" "+x.name,
                         }
                     });
+                }
                }
                 }
             }

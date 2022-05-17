@@ -5,7 +5,7 @@ p1=subprocess.run('eslint --rulesdir javascript/rules javascript/variable.js ',s
 # Extracting the output txt 
 s=p1.stdout
 #Reading the file To get no of lines in the file.
-file=open('javascript/getPayment.js','r')
+file=open('javascript/variable.js','r')
 noOfLines=len(file.readlines());
 errorCount=0
 warningCount=0
